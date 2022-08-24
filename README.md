@@ -1,2 +1,2 @@
 # build_resume
-code to build a resume using pagedown
+This repository contains the code to build a resume using pagedown.
