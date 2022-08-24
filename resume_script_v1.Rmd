@@ -31,13 +31,13 @@ library(googlesheets4)
 
 ```{r make the resume}
 
-datadrivencv::use_datadriven_cv(
-     full_name = "Edward Quinn",
-     data_location = "https://docs.google.com/spreadsheets/d/1buLhmEIB6FJdWlLMGiWV59OkKRyqECFXrzTee0xT7oo/edit?usp=sharing",
-     pdf_location = here::here("edward_quinn.pdf"),
-     html_location = here::here("edward_quinn.html"),
-     source_location = here::here()
- )
+# datadrivencv::use_datadriven_cv(
+#      full_name = "Edward Quinn",
+#      data_location = "https://docs.google.com/spreadsheets/d/1buLhmEIB6FJdWlLMGiWV59OkKRyqECFXrzTee0xT7oo/edit?usp=sharing",
+#      pdf_location = here::here("edward_quinn.pdf"),
+#      html_location = here::here("edward_quinn.html"),
+#      source_location = here::here()
+#  )
 
 source("render_cv.r")
 
