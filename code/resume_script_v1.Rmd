@@ -21,11 +21,22 @@ knitr::opts_chunk$set(echo = TRUE)
 library(devtools)
 library(datadrivencv)
 library(icon)
+library(here)
+
+
 
 ```
 
 
 ```{r make the resume}
+
+datadrivencv::use_datadriven_cv(
+     full_name = "Nelson Mandela",
+     data_location = "https://docs.google.com/spreadsheets/d/1_6fzNA6MwDSjUBXjjV7ThJfKEYj8xxJO9i09IV1cVVY/edit#gid=917338460",
+     pdf_location = here::here("nelson-mandela.pdf"),
+     html_location = here::here(),
+     source_location = here::here()
+ )
 
 ```
 
