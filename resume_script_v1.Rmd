@@ -16,12 +16,13 @@ knitr::opts_chunk$set(echo = TRUE)
 #install.packages("devtools")
 #remotes::install_github('mitchelloharawild/icons@v0.1.0')
 #devtools::install_github("nstrayer/datadrivencv")
+devtools::install_github("tidyverse/googlesheets4")
 
 
 library(devtools)
 library(datadrivencv)
 library(icon)
-library(here)
+library(googlesheets4)
 
 
 
@@ -31,12 +32,15 @@ library(here)
 ```{r make the resume}
 
 datadrivencv::use_datadriven_cv(
-     full_name = "Nelson Mandela",
-     data_location = "https://docs.google.com/spreadsheets/d/1_6fzNA6MwDSjUBXjjV7ThJfKEYj8xxJO9i09IV1cVVY/edit#gid=917338460",
-     pdf_location = here::here("nelson-mandela.pdf"),
-     html_location = here::here(),
+     full_name = "Edward Quinn",
+     data_location = "https://docs.google.com/spreadsheets/d/1buLhmEIB6FJdWlLMGiWV59OkKRyqECFXrzTee0xT7oo/edit?usp=sharing",
+     pdf_location = here::here("edward_quinn.pdf"),
+     html_location = here::here("edward_quinn.html"),
      source_location = here::here()
  )
+
+source("render_cv.r")
+
 
 ```
 
