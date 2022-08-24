@@ -1,0 +1,31 @@
+---
+title: "Resume"
+author: "Edward B. Quinn"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Make resume
+
+```{r installs and such}
+
+#install.packages("devtools")
+#remotes::install_github('mitchelloharawild/icons@v0.1.0')
+#devtools::install_github("nstrayer/datadrivencv")
+
+
+library(devtools)
+library(datadrivencv)
+library(icon)
+
+```
+
+
+```{r make the resume}
+
+```
+
