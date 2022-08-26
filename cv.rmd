@@ -46,9 +46,11 @@ Aside
 ================================================================================
 
 ```{r}
+
 # Build interactive network of positions colored by section
 # and connected if they occurred in the same year
 #datadrivencv::build_network_logo(CV$entries_data)
+
 ```
 
 
@@ -65,13 +67,15 @@ Aside
 Contact {#contact}
 --------------------------------------------------------------------------------
 
-```{r}
+```{r print contact information}
+
 CV %>% print_contact_info()
+
 ```
 
 
 
-Language Skills {#skills}
+Technical Skills {#skills}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -85,8 +89,6 @@ Disclaimer {#disclaimer}
 
 Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
 
-The source code is available [on GitHub](github.com/edward-quinn).
-
 Last updated on `r Sys.Date()`.
 
 
@@ -98,8 +100,10 @@ Edward Quinn, MA, MPH {#title}
 --------------------------------------------------------------------------------
 
 ```{r intro printer}
+
 # Note the special double pipe so we modify the CV object in place
 CV %<>% print_text_block("intro") 
+
 ```
 
 
@@ -108,7 +112,9 @@ Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r education printer}
+
 CV %<>% print_section('education')
+
 ```
 
 
@@ -117,11 +123,14 @@ Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ```{r research experience printer}
+
 CV %<>% print_section('experience')
+
 ```
 
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
+
 <br>
 <br>
 <br>
@@ -130,14 +139,17 @@ Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
 ::: aside
-```{r}
+```{r print teaching experience aside}
+
 #CV %<>% print_text_block('teaching_experience_aside')
 
 ```
 :::
 
-```{r}
+```{r print teaching positions}
+
 CV %<>% print_section('teaching_positions')
+
 ```
 
 <br>
@@ -147,13 +159,17 @@ CV %<>% print_section('teaching_positions')
 Selected Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
-```{r}
+```{r print publications}
+
 CV %<>% print_section('academic_articles')
+
 ```
 
 
 
-```{r}
+```{r print links}
+
 #CV %<>% print_links()
+
 ```
 
