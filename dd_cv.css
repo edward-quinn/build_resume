@@ -78,9 +78,9 @@ sup {
 
 /* Make sure elements in asside are centered and have a nice small text */
 .aside {
-  width: calc(var(--sidebar-width) + 9px);
+  width: calc(var(--sidebar-width) + 25px);
   line-height: 1.2;
-  font-size: 0.75rem;
+  font-size: 0.60rem;
 }
 
 /* Make little circle outline be a light blue */

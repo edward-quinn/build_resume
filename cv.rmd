@@ -67,6 +67,8 @@ Aside
 Contact {#contact}
 --------------------------------------------------------------------------------
 
+
+
 ```{r print contact information}
 
 CV %>% print_contact_info()
@@ -106,7 +108,24 @@ CV %<>% print_text_block("intro")
 
 ```
 
+Experience {data-icon=laptop}
+--------------------------------------------------------------------------------
 
+```{r research experience printer}
+
+CV %<>% print_section('experience')
+
+```
+
+::: aside
+```{r print experience aside}
+
+CV %<>% print_text_block('experience_aside')
+
+
+
+```
+:::
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
@@ -119,15 +138,6 @@ CV %<>% print_section('education')
 
 
 
-Research Experience {data-icon=laptop}
---------------------------------------------------------------------------------
-
-```{r research experience printer}
-
-CV %<>% print_section('experience')
-
-```
-
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
 
@@ -135,20 +145,20 @@ CV %<>% print_section('experience')
 <br>
 <br>
 
-Teaching Experience {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
-
 ::: aside
-```{r print teaching experience aside}
+```{r print education experience aside}
 
-#CV %<>% print_text_block('teaching_experience_aside')
+CV %<>% print_text_block('education_aside')
+
 
 ```
 :::
 
+
+
 ```{r print teaching positions}
 
-CV %<>% print_section('teaching_positions')
+# CV %<>% print_section('teaching_positions')
 
 ```
 
@@ -156,12 +166,9 @@ CV %<>% print_section('teaching_positions')
 <br>
 
 
-Selected Publications {data-icon=book}
---------------------------------------------------------------------------------
-
 ```{r print publications}
 
-CV %<>% print_section('academic_articles')
+# CV %<>% print_section('academic_articles')
 
 ```
 
