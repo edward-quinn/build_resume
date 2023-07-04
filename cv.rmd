@@ -141,14 +141,12 @@ CV %<>% print_section('education')
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
 
-<br>
-<br>
-<br>
+
 
 ::: aside
 ```{r print education experience aside}
 
-CV %<>% print_text_block('education_aside')
+#CV %<>% print_text_block('education_aside')
 
 
 ```
@@ -165,12 +163,12 @@ CV %<>% print_text_block('education_aside')
 <br>
 <br>
 
-Health Research Publications {data-icon=book}
---------------------------------------------------------------------------------
+<!-- Health Research Publications {data-icon=book} -->
+<!-- -------------------------------------------------------------------------------- -->
 
 ```{r print publications}
 
-CV %<>% print_section('academic_articles')
+#CV %<>% print_section('academic_articles')
 
 ```
 
