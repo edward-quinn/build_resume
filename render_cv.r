@@ -6,16 +6,16 @@
 # for the HTML and PDF rendering. This exercise is left to the reader.
 
 # Knit the HTML version
-rmarkdown::render("cv_air_20230824.rmd",
+rmarkdown::render("resume_medstar_20231129.rmd",
                   params = list(pdf_mode = FALSE),
-                  output_file = "cv_air_20230824.html")
+                  output_file = "resume_medstar_20231129.html")
 
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")
-rmarkdown::render("cv_air_20230824.rmd",
+rmarkdown::render("resume_medstar_20231129.rmd",
                   params = list(pdf_mode = TRUE),
                   output_file = tmp_html_cv_loc)
 
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
-                       output = "cv_air_20230824.pdf")
+                       output = "resume_medstar_20231129.pdf")
